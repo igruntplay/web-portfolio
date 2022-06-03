@@ -443,10 +443,14 @@ video {
 
 .about-subtitle {
 	font-size: var(--smaller-font-size);
-}.hacking-portfolio {
+}
+
+.hacking-portfolio {
 	font-size: var(--h2-font-size);
 		text-align: center;
 	margin-bottom: var(--mb-0-75);
+	margin-top: var(--mb-3);
+
 }
 .button-contact {
 	margin-top: 1.5rem;
@@ -546,9 +550,17 @@ video {
 .abilities-icon {
 	font-size: 1.5rem;
 	color: var(--skin-color);
-	margin-bottom: var(--mb-0-75);
+	margin-bottom: var(--mb-0-25);
 }
 
+
+.details-info li a {
+	color: var(--skin-color);
+}
+.details-info li a:hover {
+	cursor: pointer;
+	text-decoration: underline; 
+}
 .abilities-title {
 	font-size: var(--small-font-size);
 }
@@ -567,6 +579,14 @@ video {
 	background-color: var(--box-color);
 	padding: 1.25rem;
 	border-radius: 0.5rem;
+	transition: .5s;
+}
+
+.work-card:hover {
+	cursor:pointer;
+	filter: brightness(120%);
+		transition: .5s;
+
 }
 
 
@@ -896,6 +916,14 @@ textarea.input {
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
 
+
+.hacking-portfolio {
+	font-size: var(--h2-font-size);
+		text-align: center;
+	margin-bottom: var(--mb-0-75);
+	margin-top: var(--mb-1);
+
+}
 	.about-img {
 		width: 250px;
 	}
